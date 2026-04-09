@@ -13,5 +13,3 @@ netzbremse-measurement:
     paths:
       - json-results/
     expire_in: 30 days
-  script:
-    - echo "Running speedtest..."
