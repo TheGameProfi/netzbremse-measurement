@@ -42,9 +42,9 @@ It is also possible to build your own image for different architectures by cloni
 docker compose -f docker-compose.build.yml build
 ```
 
-## Data Visualization
+## Data Visualisation
 
-At the moment this tool does not have a built-in solution for visualizing the measurements over time. Thankfully there is a community-provided [Streamlit dashboard](https://github.com/lwndp/netzbremse-dashboard/) by [@lwndp](https://github.com/lwndp) that runs as a separate container alongside the speedtest container.
+At the moment, this tool does not have a built-in solution for visualising the measurements over time. Thankfully there is a community-provided [Streamlit dashboard](https://github.com/lwndp/netzbremse-dashboard/) by [@lwndp](https://github.com/lwndp) that runs as a separate container alongside the speedtest container.
 
 To get started, clone this repository or download [`docker-compose.dashboard.yml`](https://raw.githubusercontent.com/AKVorrat/netzbremse-measurement/refs/heads/main/docker-compose.dashboard.yml) in addition to [`docker-compose.yml`](https://raw.githubusercontent.com/AKVorrat/netzbremse-measurement/refs/heads/main/docker-compose.yml) and save both files in the same folder. 
 
@@ -54,11 +54,11 @@ Use the following command to start both the speedtest and dashboard containers.
 docker compose -f docker-compose.yml -f docker-compose.dashboard.yml up -d
 ```
 
-After a few seconds the dashboard should be reachable under ```http://[your-systems-ip-address]:8501```.
+After a few seconds, the dashboard should be reachable under ```http://[your-systems-ip-address]:8501```.
 
 > **⚠️ WARNING:** The default configuration opens a port and exposes the dashboard publicly. Please make sure you know what you are doing. 
 
-To learn more about how to set up the dashboard go to https://github.com/lwndp/netzbremse-dashboard/. 
+To learn more about how to set up the dashboard, go to https://github.com/lwndp/netzbremse-dashboard/. 
 
 ## Run using Node.js (without Docker)
 
@@ -147,3 +147,8 @@ You should monitor your system or at least periodically check system metrics whi
 The script launches a headless Chromium instance in the background. In some cases, orphaned browser processes may not be cleaned up properly, or the disk may fill up with leftover Chromium profile data.
 
 *The author speaks from personal experience with similar scripts in the past.*
+
+## Running in GitLab CI/CD
+
+You can run this speed test via GitLab CI/CD on your own GitLab runner.
+See <examples/gitlab/> for an example of a pipeline job definition.
