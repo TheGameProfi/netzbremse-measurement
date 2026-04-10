@@ -151,4 +151,4 @@ The script launches a headless Chromium instance in the background. In some case
 ## Running in GitLab CI/CD
 
 You can run this speed test via GitLab CI/CD on your own GitLab runner.
-See [examples/gitlab/](examples/gitlab/) for an example of a pipeline job definition.
+See [examples/gitlab/.gitlab-ci.yml](examples/gitlab/.gitlab-ci.yml) for such a pipeline job definition.
