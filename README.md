@@ -10,7 +10,7 @@ By running this test, you are supporting our claim with anonymised real-world me
 
 Download the [`docker-compose.yml`](https://raw.githubusercontent.com/AKVorrat/netzbremse-measurement/refs/heads/main/docker-compose.yml) file.
 
-Read our privacy policy on the [website](https://netzbremse.de/speed) (visible when starting the speedtest for the first time) and edit the `docker-compose.yml` file to accept the [Cloudflare terms](https://www.cloudflare.com/de-de/privacypolicy/).
+Read our privacy policy on the [website](https://netzbremse.de/speed) (visible when starting the speed test for the first time) and edit the `docker-compose.yml` file to accept the [Cloudflare terms](https://www.cloudflare.com/de-de/privacypolicy/).
 
 ```yml
 environment: 
@@ -151,4 +151,4 @@ The script launches a headless Chromium instance in the background. In some case
 ## Running in GitLab CI/CD
 
 You can run this speed test via GitLab CI/CD on your own GitLab runner.
-See <examples/gitlab/> for an example of a pipeline job definition.
+See [examples/gitlab/](examples/gitlab/) for an example of a pipeline job definition.
