@@ -2,9 +2,9 @@
 
 Automated speedtest runner using Puppeteer to periodically test peering bottlenecks from your Deutsche Telekom internet connection.
 
-To learn more about the campaign go to our [website](https://netzbremse.de/en/) and try the [speedtest](https://netzbremse.de/en/speed) in the browser.
+To learn more about the campaign, go to our [website](https://netzbremse.de/en/) and try the [speedtest](https://netzbremse.de/en/speed) in the browser.
 
-By running this test you are supporting our claim with anonymized real world measurements in accordance with the privacy policy.
+By running this test, you are supporting our claim with anonymised real-world measurements in accordance with the privacy policy.
 
 ## Quick Start using Docker
 
@@ -17,7 +17,7 @@ environment:
   NB_SPEEDTEST_ACCEPT_POLICY: true
 ```
 
-Start the container to enable periodic speedtests running in the background.
+Start the container to enable periodic speed tests running in the background.
 
 ```bash
 docker compose up -d
@@ -29,7 +29,7 @@ View the results with:
 docker compose logs -f
 ```
 
-Anonymized results are automatically submitted to our data collection service.
+Anonymised results are automatically submitted to our data collection service.
 
 Pre-built Docker images are provided for:
 
