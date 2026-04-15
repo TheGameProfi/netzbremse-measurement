@@ -127,3 +127,6 @@ In Grafana, go to **Dashboards > Import** and either:
 
 Select your Loki data source when prompted and hit **Import**.
 
+## Screenshot
+
+<img width="1632" height="847" alt="Screenshot from 2026-04-14 10-56-10" src="https://github.com/user-attachments/assets/839361f8-0435-45ce-bb5f-1f73f15b5b88" />
